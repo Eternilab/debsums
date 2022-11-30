@@ -1,0 +1,17 @@
+---
+dependencies: []
+
+galaxy_info:
+  authors:
+    - "Sylvain Leroy <sylvain.leroy@eternilab.com>"
+  description: Debsums to validate Debian base files
+  company: "Eternilab"
+  license:
+    - "MIT"
+  platforms:
+    - name: Debian
+      versions:
+      - all
+  galaxy_tags:
+    - debsums
+    - security

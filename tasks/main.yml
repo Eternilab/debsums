@@ -1,0 +1,3 @@
+---
+- include: debsums.yml
+  tags : debsums

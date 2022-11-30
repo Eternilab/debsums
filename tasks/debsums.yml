@@ -1,0 +1,18 @@
+---
+
+- name: Be sure debsums is installed (APT based)
+  apt:
+    pkg: 'debsums'
+    state: present
+  when: ansible_pkg_mgr == 'apt'
+  become: yes
+  tags:
+    - install
+
+- name: Be sure debsums is configured
+  template:
+    src: debsums.j2
+    dest: /etc/default/debsums
+  become: yes
+  tags:
+    - conf
