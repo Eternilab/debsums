@@ -1,3 +1,4 @@
 ---
-- include: debsums.yml
+- name: "Handle the debsums role"
+  ansible.builtin.import_tasks: debsums.yml
   tags : debsums

@@ -1,0 +1,12 @@
+---
+stages:
+  - linter
+
+ansible-lint:
+  image: registry.gitlab.com/pipeline-components/ansible-lint:latest
+  stage: linter
+  tags:
+    - linux
+  script:
+    - ansible-lint --version
+    - ansible-lint --show-relpath
