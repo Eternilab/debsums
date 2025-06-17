@@ -1,18 +1,19 @@
 ---
 
-- name: Be sure debsums is installed (APT based)
-  apt:
+- name: "Be sure debsums is installed (APT based)"
+  ansible.builtin.apt:
     pkg: 'debsums'
     state: present
   when: ansible_pkg_mgr == 'apt'
-  become: yes
+  become: true
   tags:
     - install
 
-- name: Be sure debsums is configured
-  template:
+- name: "Be sure debsums is configured"
+  ansible.builtin.template:
     src: debsums.j2
     dest: /etc/default/debsums
-  become: yes
+    mode: '0644'
+  become: true
   tags:
     - conf

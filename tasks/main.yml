@@ -1,4 +1,4 @@
 ---
 - name: "Handle the debsums role"
   ansible.builtin.import_tasks: debsums.yml
-  tags : debsums
+  tags: debsums
