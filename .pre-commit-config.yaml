@@ -1,0 +1,36 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+---
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v3.2.0
+    hooks:
+      - id: trailing-whitespace
+      - id: end-of-file-fixer
+      - id: check-yaml
+      - id: check-added-large-files
+      - id: check-merge-conflict
+      - id: mixed-line-ending
+      - id: no-commit-to-branch
+        name: Don't commit to main branch
+        args: [--branch, master, --branch, main]
+  - repo: https://github.com/adrienverge/yamllint.git
+    rev: v1.37.1
+    hooks:
+      - id: yamllint
+  # - repo: https://github.com/crate-ci/typos.git
+  #   rev: v1.33.1
+  #   hooks:
+  #     - id: typos
+  - repo: https://github.com/jorisroovers/gitlint
+    rev: v0.19.1
+    hooks:
+      - id: gitlint
+  - repo: https://github.com/ansible/ansible-lint.git
+    rev: v25.6.0
+    hooks:
+      - id: ansible-lint
+        name: Ansible Lint
+        additional_dependencies:
+          - ansible
+        args: [-c, .ansible-lint.yml]
