@@ -15,7 +15,9 @@ Ce rôle ne garanti pas la conformité en cas de modification de ces valeurs, bi
 
 ## Description
 
-Ce rôle installe et configure _debsums_ pour qu'il soit conforme au guide
+Ce rôle installe et configure _debsums_ 
+_Debsums_ est un outil qui permet de vérifier l'intégrité des fichiers des paquets sintallés avec les sommes de contrôle MD5.
+Ce rôle est configuré pour qu'il soit conforme au guide
 [GUIDE_LINUX] de l'ANSSI :fr: :
 
 > https://cyber.gouv.fr/publications/FIXME
