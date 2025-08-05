@@ -74,10 +74,10 @@ Signification de la couverture :
 | R37  | :x:                  |          | | |
 | R38  | :x:                  |          | | |
 | R39  | :x:                  |          | | |
-| R40  | :x:                  |          | | |
+| R40  | :no_entry_sign:      |          | | |
 | R41  | :no_entry_sign:      |          | | |
-| R42  | :x:                  |          | | |
-| R43  | :x:                  |          | | |
+| R42  | :no_entry_sign:      |          | | |
+| R43  | :no_entry_sign:      |          | | |
 | R44  | :x:                  |          | | |
 | R45  | :x:                  |          | | |
 | R46  | :x:                  |          | | |
