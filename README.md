@@ -12,10 +12,9 @@ Ce rôle est sous licence MIT
 Ce rôle installe et configure _debsums_
 _Debsums_ est un outil qui permet de vérifier l'intégrité des fichiers des paquets intallés avec les sommes de contrôle MD5 depuis /var/lib/dpkg/info/*.md5sums.
 
+## Commandes utiles
 
-## Commandes utiles
-
-EXEMPLES
+### EXEMPLES
 
 ```debsums foo bar```
     Vérifie les sommes de contrôle des paquets installés foo et bar.
@@ -31,7 +30,6 @@ EXEMPLES
     Comme ci-dessus, en utilisant les sommes de contrôle des archives .deb disponibles en cache.
 ```apt-get install --reinstall $(dpkg -S $(debsums -c) | cut -d : -f 1 | sort -u)```
     Réinstalle les paquets ayant des fichiers modifiés.
-
 
 ## Conformité ANSSI DEBSUMS
 
